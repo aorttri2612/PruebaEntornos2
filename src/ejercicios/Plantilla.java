@@ -5,6 +5,19 @@ import java.util.List;
 
 public class Plantilla {
 
-	List<Integer> Empleado = new ArrayList<>();
+	private List<Empleado> empleados;
 
+	public Plantilla() {
+		this.empleados = new ArrayList<>();
+
+	}
+
+	public void agregarEmpleado(Empleado empleado) {
+
+	}
+
+	public List<Empleado> getEmpleadosPorNombre(String texto) {
+		return empleados;
+
+	}
 }
