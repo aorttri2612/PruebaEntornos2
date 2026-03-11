@@ -14,6 +14,20 @@ public abstract class Empleado {
 
 	}
 
-	public abstract void getsueldo(double sueldoBase);
+	public String getDni() {
+		return this.dni;
+	}
+
+	public String getNombre() {
+		return this.nombre;
+	}
+
+	public String getApellidos() {
+		return this.apellidos;
+	}
+
+	public abstract void getsueldo(double sueldoBase) {
+		return this.sueldoBase;
+	}
 
 }

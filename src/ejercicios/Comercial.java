@@ -12,11 +12,14 @@ public class Comercial extends Empleado {
 	}
 
 	public void setVentas(double ventas) {
+		this.ventas = ventas;
 
 	}
 
 	@Override
-	public void getsueldo(double sueldoBase) {
+	public double getsueldo(double sueldoBase) {
+		sueldoBase = (sueldoBase + (ventas * 0.1));
+		return sueldoBase;
 	}
 
 }
